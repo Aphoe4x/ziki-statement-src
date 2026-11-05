@@ -2,7 +2,7 @@
 
 A week of agent work as a **document you sign**, instead of an inbox you scroll.
 
-Live: https://aphoe4x.github.io/ziki-statement/
+Live: https://aphoe4x.github.io/ziki-sign/
 
 ## The idea
 

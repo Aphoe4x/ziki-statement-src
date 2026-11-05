@@ -17,7 +17,10 @@ export function LedgerRow({ item }: { item: LedgerItem }) {
         <span className="cell-date mono">{item.date}</span>
         <span className="cell-outcome">
           <span className="outcome">{item.outcome}</span>
-          <span className="outcome-sub">{item.proof}</span>
+          <span className="outcome-sub">
+            <span className="inline-date mono">{item.date}</span>
+            {item.proof}
+          </span>
         </span>
         <span className="cell-earned mono">+${item.earned}</span>
         <ChevronDown className={open ? "chev open" : "chev"} />

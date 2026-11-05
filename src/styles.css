@@ -409,6 +409,10 @@ a {
   color: var(--faint);
 }
 
+.inline-date {
+  display: none;
+}
+
 .cell-earned {
   font-size: 12.5px;
   font-weight: 500;
@@ -934,6 +938,35 @@ a {
   .seal {
     width: 74px;
     height: 74px;
+  }
+}
+
+@media (max-width: 380px) {
+  .ledger-row {
+    grid-template-columns: minmax(0, 1fr) auto 12px;
+    gap: 6px 8px;
+  }
+
+  .cell-date {
+    display: none;
+  }
+
+  .inline-date {
+    display: inline;
+    margin-right: 4px;
+  }
+
+  .inline-date::after {
+    content: "·";
+    margin-left: 6px;
+  }
+
+  .paper-dates {
+    font-size: 9px;
+  }
+
+  .sig-title {
+    font-size: 14.5px;
   }
 }
 
